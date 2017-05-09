@@ -8,10 +8,10 @@ function HomePage(props){
     <div>
       <div className="jumbotron container">
         <h1 className="display-3">We-Help</h1>
-        <p className="lead">Connecting helpers to those in need.</p>
+        <h3 className="lead">Connecting helpers to those in need.</h3>
       </div>
-      <NavButtons />
       <Description />
+      <NavButtons />
     </div>
   )
 }

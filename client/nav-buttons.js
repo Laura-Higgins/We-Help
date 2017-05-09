@@ -13,8 +13,8 @@ function NavButtons(props) {
   }
   return (
     <div id="navButtons">
-      <button type="button" className="btn btn-info btn-lg" id="nonprofitButton" onClick={handleNonprofitChange}>I am a Nonprofit!</button>
-      <button type="button" className="btn btn-info btn-lg" onClick={handleVolunteerChange}>I am a Volunteer!</button>
+      <button type="button" className="btn btn-info btn-lg" id="nonprofitButton" onClick={handleNonprofitChange}>I'm a Nonprofit</button>
+      <button type="button" className="btn btn-info btn-lg" onClick={handleVolunteerChange}>I'm a Volunteer</button>
     </div>
   )
 }
