@@ -8,7 +8,7 @@ const HomeButton = require('./home-button')
 function NonprofitPage() {
   return (
     <div>
-      <HomeButton /> 
+      <HomeButton />
       <Logo />
       <div className="row" id="nonprofitHeader">
         <h1>My nonprofit needs help!</h1>

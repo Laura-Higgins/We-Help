@@ -13,8 +13,9 @@ function NavButtons(props) {
   }
   return (
     <div id="navButtons">
-      <button type="button" className="btn btn-info btn-lg" id="nonprofitButton" onClick={handleNonprofitChange}>I'm a Nonprofit</button>
-      <button type="button" className="btn btn-info btn-lg" onClick={handleVolunteerChange}>I'm a Volunteer</button>
+      <h1 id="navButtons-header">let's get started!</h1>
+      <button type="button" className="btn btn-primary btn-lg" id="nonprofitButton" onClick={handleNonprofitChange}>I'm a Nonprofit</button>
+      <button type="button" className="btn btn-primary btn-lg" onClick={handleVolunteerChange}>I'm a Volunteer</button>
     </div>
   )
 }

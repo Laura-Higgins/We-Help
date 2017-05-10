@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node .",
+    "start": "node ./server",
     "bundle": "browserify client/index.js -d -t babelify -o server/public/main.js"
   },
   "repository": {
@@ -20,7 +20,9 @@
   },
   "homepage": "https://github.com/Laura-Higgins/We-Help#readme",
   "dependencies": {
+    "body-parser": "^1.17.1",
     "express": "^4.15.2",
+    "mongodb": "^2.2.26",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
     "redux": "^3.6.0"

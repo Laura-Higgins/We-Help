@@ -41,7 +41,7 @@ function NonprofitForm(props) {
         <small className="text-muted"> Be specific</small>
         <textarea className="form-control" id="TextArea" rows="3"></textarea>
       </div>
-      <button id="form-button" type="submit" className="btn btn-info">Get Help!</button>
+      <button id="form-button" type="submit" className="btn btn-primary btn-lg">Get Help!</button>
     </div>
   )
 }
