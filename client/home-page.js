@@ -7,11 +7,11 @@ function HomePage(props){
   return (
     <div>
       <div className="jumbotron container">
-        <h1 className="display-3">We-Help</h1>
-        <p className="lead">Connecting helpers to those in need.</p>
+        <h1 className="home-logo">We-Help</h1>
+        <h3 className="tagline">Connecting helpers to those in need.</h3>
       </div>
-      <NavButtons />
       <Description />
+      <NavButtons />
     </div>
   )
 }

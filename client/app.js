@@ -2,16 +2,17 @@ const React = require('react')
 const ReactDOM = require('react-dom')
 const store = require('./store')
 const HomePage = require('./home-page')
+const NonprofitPage = require('./nonprofit-page')
 
 function App(props) {
   switch (props.views.currentView) {
     case 1:
       return (
-        <HomePage/>
+        <HomePage {...props} />
       )
       case 2:
         return (
-          <div></div>
+          <NonprofitPage {...props} />
         )
       case 3:
         return (
