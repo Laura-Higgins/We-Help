@@ -5,11 +5,9 @@ const React = require('react')
 function NavButtons(props) {
   const handleNonprofitChange = function($event) {
     store.dispatch({ type: 'CHANGED_NONPROFIT' })
-    console.log('clicked!')
   }
   const handleVolunteerChange = function($event) {
     store.dispatch({ type: 'CHANGED_VOLUNTEER' })
-    console.log('clicked!')
   }
   return (
     <div id="navButtons">

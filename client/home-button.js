@@ -4,7 +4,6 @@ const store = require('./store')
 function HomeButton(props) {
   const returnHome = function($event) {
     store.dispatch({ type: 'CHANGED_HOMEPAGE'})
-    console.log('clicked!')
   }
   return (
     <div>
