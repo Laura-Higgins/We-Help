@@ -1,3 +1,5 @@
+// Insert Event function connects to Database //
+
 const MongoClient = require('mongodb').MongoClient
 const loginInfo = require('./mlab.js')
 const url = 'mongodb://' + loginInfo.username + ':' + loginInfo.password + '@ds137291.mlab.com:37291/wehelp'

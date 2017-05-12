@@ -1,9 +1,12 @@
+// Server //
 const express = require('express')
 const app = express()
 const bodyParser = require('body-parser')
 const insertEvent = require('./insertEvent')
 
 app.use(bodyParser.json())
+
+app.use(express.static('server/public'))
 
 app.post('/events', function(req, res) {
   insertEvent(req.body, function(err, result) {

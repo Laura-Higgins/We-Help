@@ -8,11 +8,11 @@ function App(props) {
   switch (props.views.currentView) {
     case 1:
       return (
-        <HomePage />
+        <HomePage {...props} />
       )
       case 2:
         return (
-          <NonprofitPage />
+          <NonprofitPage {...props} />
         )
       case 3:
         return (

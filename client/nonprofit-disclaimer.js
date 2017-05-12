@@ -5,7 +5,6 @@ const HomeButton = require('./home-button')
 function Disclaimer() {
   return (
     <div className="col-sm-12" id="disclaimer1">
-      <HomeButton />
       <div id="disclaimer">
         <small>Disclaimer</small>
       </div>

@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node ./server",
+    "watch": "nodemon .",
     "bundle": "browserify client/index.js -d -t babelify -o server/public/main.js"
   },
   "repository": {
@@ -30,6 +31,7 @@
   "devDependencies": {
     "babel-plugin-transform-react-jsx": "^6.24.1",
     "babelify": "^7.3.0",
-    "browserify": "^14.3.0"
+    "browserify": "^14.3.0",
+    "nodemon": "^1.11.0"
   }
 }

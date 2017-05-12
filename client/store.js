@@ -13,9 +13,31 @@ function views(state = {currentView: 1}, action) {
       return state
   }
 }
+const formInitalState = {
+  organization: '',
+  location: '',
+  date: '',
+  time: '',
+  phoneNumber: '',
+  email: '',
+  volunteerCount: '',
+  description: ''
+}
+
+function formReducer(state= formInitalState, action) {
+  switch(action.type) {
+    case 'INPUT_UPDATED':
+      return Object.assign({}, state, action.field)
+    case 'CLEARED':
+      return formInitalState
+    default:
+      return state
+  }
+}
 
 const reducer = Redux.combineReducers({
-  views: views
+  views: views,
+  formReducer: formReducer
 })
 
 const store = Redux.createStore(reducer)
