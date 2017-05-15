@@ -1,10 +1,21 @@
 body {
   background-image: url("https://helpinghands-salem.org/wp-content/uploads/2014/09/helping-hands-bg.png");
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#card-title {
+  font-size: 65px;
+}
+
+#card-location {
+  font-size: 24px;
 }
 
 #description {
   text-align: center;
-  max-width: 800px;
+  max-width: 900px;
   display: inline-block;
   font-size: 24px;
   margin-bottom: 50px;
@@ -13,12 +24,12 @@ body {
 #descriptionContainer {
   text-align: center;
   margin: auto;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 #descriptionIntro {
-  font-size: 36px;
-  margin-bottom: 15px;
+  font-size: 64px;
+  margin-top: 100px;
 }
 
 #disclaimer {
@@ -32,6 +43,38 @@ body {
   text-align: center;
 }
 
+.event-card {
+  overflow: auto;
+  max-height: 900px;
+  border-style: solid;
+  border-width: thin;
+  border-color: black;
+  border-top: none;
+}
+
+.event-contact-info {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.event-description {
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+.eventsHeader {
+  font-family: 'Pacifico', cursive;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  font-size: 84px;
+}
+
+.event-volunteers {
+  font-size: 28px;
+  font-family: 'Raleway', sans-serif;
+}
+
 #form-button {
   text-align: right;
   margin-left: inherit;
@@ -39,21 +82,26 @@ body {
 
 .home-logo {
   font-family: 'Pacifico', cursive;
+  font-size: 100px;
+  margin-bottom: 40px;
 }
 
-.jumbotron {
+.home {
   text-align: center;
   margin-top: 100px;
-  background-color: white;
+}
+
+.indicate-events {
+  font-size: 32px;
+  text-align: left;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-weight: bold;
 }
 
 #logo {
   text-align: center;
   font-family: 'Pacifico', cursive;
-}
-
-#logo > h1 {
-  font-size: 64px;
 }
 
 #navButtons {
@@ -76,8 +124,44 @@ body {
   margin-bottom: 50px;
 }
 
+#nav-logo {
+  text-align: left;
+  font-family: 'Pacifico', cursive;
+  font-size: 64px;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+
+.overlay {
+  position: absolute;
+  background-color: white;
+  opacity: 0.3;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
 .tagline {
   font-family: 'Source Sans Pro', sans-serif;
+  margin-bottom: 25px;
+}
+
+.time-date {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.volunteers-question {
+  font-size: 50px;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+}
+
+.volunteers-description {
+  font-size: 36px;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 #volunteerSelect {

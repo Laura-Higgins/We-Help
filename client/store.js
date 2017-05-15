@@ -1,7 +1,7 @@
 // Redux Store //
 const Redux = require('redux')
 
-function views(state = {currentView: 1}, action) {
+function views(state= {currentView: 1}, action) {
   switch(action.type) {
     case 'CHANGED_HOMEPAGE':
       return Object.assign({}, state, {currentView: 1})
@@ -13,7 +13,7 @@ function views(state = {currentView: 1}, action) {
       return state
   }
 }
-const formInitalState = {
+const formInitalState= {
   organization: '',
   location: '',
   date: '',
@@ -35,9 +35,19 @@ function formReducer(state= formInitalState, action) {
   }
 }
 
+function events(state=  [], action) {
+  switch(action.type) {
+    case 'EVENTS_LOADED':
+      return action.data
+    default:
+      return state
+  }
+}
+
 const reducer = Redux.combineReducers({
   views: views,
-  formReducer: formReducer
+  formReducer: formReducer,
+  events: events
 })
 
 const store = Redux.createStore(reducer)

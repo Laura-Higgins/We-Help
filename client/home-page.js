@@ -6,7 +6,7 @@ const Description = require('./site-description')
 function HomePage(props){
   return (
     <div>
-      <div className="jumbotron container">
+      <div className="home container">
         <h1 className="home-logo">We-Help</h1>
         <h3 className="tagline">Connecting helpers to those in need.</h3>
       </div>
