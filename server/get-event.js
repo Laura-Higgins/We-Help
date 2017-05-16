@@ -19,7 +19,7 @@ function getEvent(event, callback) {
         collection.find().toArray(function(err, docs) {
           if (err) {
             callback(err)
-            db.close
+            db.close()
             return
           } else {
             callback(null, docs)
