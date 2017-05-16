@@ -20,6 +20,7 @@ function Events(props) {
             <p className="event-contact-info">To commit to volunteering, or request more detailed information:</p>
             <p className="event-contact-info">Email: {event.email}</p>
             <p className="event-contact-info">Phone: {event.phoneNumber}</p>
+            <button className="btn btn-primary">I'm Interested!</button>
           </div>
         )
       })}
