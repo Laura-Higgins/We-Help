@@ -1,5 +1,4 @@
 // Insert Event function connects to Database //
-require('dotenv').config()
 const MongoClient = require('mongodb').MongoClient
 const url = 'mongodb://' + process.env.DB_USER + ':' + process.env.DB_PASS + '@ds137291.mlab.com:37291/wehelp'
 
