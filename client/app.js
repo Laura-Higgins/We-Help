@@ -3,6 +3,7 @@ const ReactDOM = require('react-dom')
 const store = require('./store')
 const HomePage = require('./home-page')
 const NonprofitPage = require('./nonprofit-page')
+const VolunteerPage = require('./volunteer-page')
 
 function App(props) {
   switch (props.views.currentView) {
@@ -16,11 +17,11 @@ function App(props) {
         )
       case 3:
         return (
-          <div></div>
+          <VolunteerPage {...props} />
         )
     default:
       return (
-        <div></div>
+        <HomePage {...props} />
       )
   }
 }

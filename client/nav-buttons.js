@@ -7,7 +7,15 @@ function NavButtons(props) {
     store.dispatch({ type: 'CHANGED_NONPROFIT' })
   }
   const handleVolunteerChange = function($event) {
-    store.dispatch({ type: 'CHANGED_VOLUNTEER' })
+    fetch('/events', {
+      method: 'GET'
+    }).then(function(response) {
+      return response.json()
+    })
+    .then(function(data) {
+      store.dispatch({ type: 'EVENTS_LOADED', data})
+      store.dispatch({ type: 'CHANGED_VOLUNTEER' })
+    })
   }
   return (
     <div id="navButtons">

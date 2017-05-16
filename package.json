@@ -6,8 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node ./server",
-    "watch": "nodemon .",
-    "bundle": "browserify client/index.js -d -t babelify -o server/public/main.js"
+    "watch": "nodemon ./server",
+    "bundle": "browserify client/index.js -d -t babelify -o server/public/main.js",
+    "bundle:watch": "watchify client/index.js -d -v -t babelify -o server/public/main.js"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,7 @@
   "homepage": "https://github.com/Laura-Higgins/We-Help#readme",
   "dependencies": {
     "body-parser": "^1.17.1",
+    "dotenv": "^4.0.0",
     "express": "^4.15.2",
     "mongodb": "^2.2.26",
     "react": "^15.5.4",
@@ -32,6 +34,7 @@
     "babel-plugin-transform-react-jsx": "^6.24.1",
     "babelify": "^7.3.0",
     "browserify": "^14.3.0",
-    "nodemon": "^1.11.0"
+    "nodemon": "^1.11.0",
+    "watchify": "^3.9.0"
   }
 }
