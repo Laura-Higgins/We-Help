@@ -6,8 +6,8 @@ function HomeButton(props) {
     store.dispatch({ type: 'CHANGED_HOMEPAGE'})
   }
   return (
-    <div>
-      <button type="button" className="btn btn-secondary" id="homeButton" onClick={returnHome}>back to main page</button>
+    <div id="homeButton">
+      <button type="button" className="btn btn-primary home-button" onClick={returnHome}>back to main page</button>
     </div>
   )
 }

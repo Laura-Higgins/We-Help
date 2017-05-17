@@ -2,10 +2,10 @@ const React = require('react')
 
 function Logo() {
   return (
-    <div id="logo">
+    <div id="form-logo">
       <h1>We-Help</h1>
     </div>
   )
 }
 
-module.exports = Logo 
+module.exports = Logo

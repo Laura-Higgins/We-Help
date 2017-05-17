@@ -22,7 +22,7 @@ const formInitalState= {
   email: '',
   volunteerCount: '',
   description: '',
-  interestCount: ''
+  interestCount: 0
 }
 
 function formReducer(state= formInitalState, action) {
